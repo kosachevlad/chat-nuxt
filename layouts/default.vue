@@ -19,7 +19,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app>
-      <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click="drawer = !drawer" mobile-break-point="650"></v-toolbar-side-icon>
       <v-btn icon @click="exit">
         <v-icon>arrow_back</v-icon>
       </v-btn>
@@ -27,7 +27,7 @@
       <v-toolbar-title>Чат комнаты {{user.room}}</v-toolbar-title>
     </v-toolbar>
     <v-content>
-      <div>
+      <div style="height: 100%">
         <nuxt />
       </div>    
     </v-content>
