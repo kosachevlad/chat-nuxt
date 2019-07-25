@@ -18,7 +18,6 @@ export default {
   computed: mapState(['user']),
   methods: {
     send() {
-      console.log(this.$store.state)
       this.$socket.emit('createMessage', {
         
         text: this.text,
